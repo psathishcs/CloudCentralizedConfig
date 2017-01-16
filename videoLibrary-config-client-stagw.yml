@@ -1,0 +1,10 @@
+server:
+  port: 8083
+  contextPath: /videos/api
+
+logging:
+  level:
+    org.orders.controllers: INFO
+spring:
+    application:
+        name: VideoLibrarysRS
