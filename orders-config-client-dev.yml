@@ -26,3 +26,14 @@ spring:
             ddl-auto: update
             dialect: org.hibernate.dialect.Oracle10gDialect
             naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://windows10.server.com:8761/eureka/
+    instance:
+        preferIpAddress: true
+
+ribbon:
+    eureka:
+        enabled: true

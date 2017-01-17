@@ -8,3 +8,13 @@ logging:
 spring:
     application:
         name: VideoLibrarysRS
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://windows10.server.com:8761/eureka/
+    instance:
+        preferIpAddress: true
+
+ribbon:
+    eureka:
+        enabled: true
