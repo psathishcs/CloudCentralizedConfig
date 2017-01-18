@@ -1,6 +1,6 @@
 
 server:
-  port: 8085
+  port: 8105
   contextPath: /hr/api
 
 logging:
