@@ -1,0 +1,20 @@
+server:
+  port: 8083
+  contextPath: /videos/api
+
+logging:
+  level:
+    org.orders.controllers: INFO
+spring:
+    application:
+        name: VideoLibrarysRS
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://eurekaregistry:8761/eureka/
+    instance:
+        preferIpAddress: true
+
+ribbon:
+    eureka:
+        enabled: true
