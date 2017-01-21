@@ -28,11 +28,13 @@ spring:
             ddl-auto: update
             dialect: org.hibernate.dialect.Oracle10gDialect
             naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-    cloud:
-        consul:
-            host: consul-discovery
-            port: 8500
-            discovery:
-                healthCheckPath: ${management.contextPath}/health
-                healthCheckInterval: 15s
-                instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  eureka:
+      client:
+          serviceUrl:
+              defaultZone: http://eurekaregistry:8761/eureka/
+      instance:
+          preferIpAddress: true
+
+  ribbon:
+      eureka:
+          enabled: true
