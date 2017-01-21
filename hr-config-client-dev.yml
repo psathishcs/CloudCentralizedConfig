@@ -30,7 +30,7 @@ spring:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://windows10.server.com:8761/eureka/
+            defaultZone: http://eurekaregistry:8761/eureka/
     instance:
         preferIpAddress: true
 
