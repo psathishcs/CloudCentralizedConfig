@@ -9,8 +9,7 @@ logging:
 
 entitymanager:
     packagesToScan: org.orders
-management:
-    contextPath: /admin
+    
 spring:
     application:
         name: OrdersRS
@@ -28,13 +27,14 @@ spring:
             ddl-auto: update
             dialect: org.hibernate.dialect.Oracle10gDialect
             naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-  eureka:
-      client:
-          serviceUrl:
-              defaultZone: http://eurekaregistry:8761/eureka/
-      instance:
-          preferIpAddress: true
+	    
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://eurekaregistry:8761/eureka/
+    instance:
+        preferIpAddress: true
 
-  ribbon:
-      eureka:
-          enabled: true
+ribbon:
+    eureka:
+        enabled: true
