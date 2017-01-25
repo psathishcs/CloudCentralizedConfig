@@ -5,7 +5,9 @@ server:
 logging:
   level:
     org.orders.controllers: INFO
-
+spring:
+    zipkin:
+        baseUrl: http://docker.server.com:9411
 eureka:
     client:
         serviceUrl:

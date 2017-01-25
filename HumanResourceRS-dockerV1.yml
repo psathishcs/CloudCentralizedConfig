@@ -6,7 +6,9 @@ server:
 logging:
   level:
     org.hr.controllers: INFO
-
+spring:
+    zipkin:
+        baseUrl: http://zipkin:9411
 entitymanager:
     packagesToScan: org.hr
 spring:

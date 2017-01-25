@@ -10,6 +10,8 @@ logging:
 entitymanager:
     packagesToScan: org.sales
 spring:
+    zipkin:
+        baseUrl: http://docker.server.com:9411
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl

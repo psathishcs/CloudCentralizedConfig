@@ -6,10 +6,11 @@ server:
 logging:
   level:
     org.hr.controllers: INFO
-
 entitymanager:
     packagesToScan: org.hr
 spring:
+    zipkin:
+        baseUrl: http://zipkin:9411
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl
