@@ -1,22 +1,21 @@
 
 server:
-  port: 8089
-  contextPath: /sales/api
+  port: 8087
+  contextPath: /orders/api
 
 logging:
   level:
-    org.sh.controllers: INFO
+    org.orders.controllers: INFO
 
 entitymanager:
-    packagesToScan: org.sales
+    packagesToScan: org.orders
+
 spring:
-    application:
-        name: SalesRS
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl
-        username: sh
-        password: sh
+        username: OE
+        password: oe
         initialize: true
         testWhileIdle: 1
         validationQuery: SELECT 1

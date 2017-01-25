@@ -1,6 +1,6 @@
 
 server:
-  port: 8085
+  port: 8185
   contextPath: /hr/api
 
 logging:
@@ -10,8 +10,6 @@ logging:
 entitymanager:
     packagesToScan: org.hr
 spring:
-    application:
-        name: HumanResourceRS
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl

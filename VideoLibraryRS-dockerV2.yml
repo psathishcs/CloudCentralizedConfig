@@ -5,9 +5,6 @@ server:
 logging:
   level:
     org.orders.controllers: INFO
-spring:
-    application:
-        name: VideoLibrarysRS
 eureka:
     client:
         serviceUrl:

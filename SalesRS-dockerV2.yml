@@ -1,22 +1,20 @@
 
 server:
-  port: 8185
-  contextPath: /hr/api
+  port: 8189
+  contextPath: /sales/api
 
 logging:
   level:
-    org.hr.controllers: INFO
+    org.sh.controllers: INFO
 
 entitymanager:
-    packagesToScan: org.hr
+    packagesToScan: org.sales
 spring:
-    application:
-        name: HumanResourceRS
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl
-        username: hr
-        password: hr
+        username: sh
+        password: sh
         initialize: true
         testWhileIdle: 1
         validationQuery: SELECT 1

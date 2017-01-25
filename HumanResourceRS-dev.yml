@@ -1,23 +1,20 @@
 
 server:
-  port: 8087
-  contextPath: /orders/api
+  port: 8085
+  contextPath: /hr/api
 
 logging:
   level:
-    org.orders.controllers: INFO
+    org.hr.controllers: INFO
 
 entitymanager:
-    packagesToScan: org.orders
-    
+    packagesToScan: org.hr
 spring:
-    application:
-        name: OrdersRS
     datasource:
         driverClassName: oracle.jdbc.driver.OracleDriver
         url: jdbc:oracle:thin:@windows10.server.com:1521:orcl
-        username: OE
-        password: oe
+        username: hr
+        password: hr
         initialize: true
         testWhileIdle: 1
         validationQuery: SELECT 1

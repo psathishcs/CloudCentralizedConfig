@@ -1,13 +1,10 @@
 server:
-  port: 8083
+  port: 8283
   contextPath: /videos/api
 
 logging:
   level:
     org.orders.controllers: INFO
-spring:
-    application:
-        name: VideoLibrarysRS
 eureka:
     client:
         serviceUrl:
