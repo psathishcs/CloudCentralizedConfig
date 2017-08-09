@@ -38,7 +38,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://192.168.108.145:8761/eureka
   instance:
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
