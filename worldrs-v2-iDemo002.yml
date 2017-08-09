@@ -8,6 +8,12 @@ logging:
     org.world.rs.controllers: INFO
     com.netflix.eureka: OFF
     com.netflix.discovery: OFF
+
+info:
+  app:
+    name: World RestFul Sevice V2
+    description: Detail of Countrys, Citys, Region, Languages .... etc around the world.
+    version: 2.0.1
     
 entitymanager:
   packagesToScan: org.world.rs
