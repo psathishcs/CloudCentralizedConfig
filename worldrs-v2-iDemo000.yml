@@ -22,7 +22,7 @@ spring:
     instance_id: i000
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://206.105.2.129:3306/world
+    url: jdbc:mysql://10.215.221.4:3306/world
     username: root
     password: Aug#2017
     initialize: true
@@ -37,7 +37,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://10.215.221.4:8761/eureka
   instance:
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
